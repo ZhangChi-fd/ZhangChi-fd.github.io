@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react'
-import { entries, iconUrl, reviewAssets } from './registry'
+import { entries, iconUrl, xpAssets } from './registry'
 import { profile } from './content/documents'
 import { ContentViewer, applicationName } from './viewers'
 import WindowShell from './WindowShell'
@@ -93,7 +93,6 @@ export default function Desktop() {
   return <main
     aria-label={`${profile.name}’s academic desktop`}
     className="desktop"
-    style={reviewAssets ? { backgroundImage: `url("${reviewAssets}/bliss.webp")` } : undefined}
     onPointerDown={event => {
       if (!tray.current?.contains(event.target as Node)) setPopup(null)
       if (event.target === event.currentTarget) setSelected(null)
@@ -169,7 +168,7 @@ export default function Desktop() {
         <nav className="start-menu" id="start-menu" aria-label="Start menu" hidden={!startOpen}>
           <header className="user-strip">
             <span className="user-tile" aria-hidden="true">
-              {reviewAssets ? <img src={`${reviewAssets}/avatar.png`} alt="" /> : profile.initials}
+              <img src={`${xpAssets}/avatar.png`} alt="" />
             </span>
             {profile.name}
           </header>

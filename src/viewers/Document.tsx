@@ -1,10 +1,8 @@
 import { useState, type ReactNode } from 'react'
 import type { DocumentContent, DocumentPhoto } from '../content/documents'
-import { entries, reviewAssets, type DesktopEntry } from '../registry'
+import { entries, xpAssets, type DesktopEntry } from '../registry'
 import { Glyph, Menubar } from './chrome'
 
-const commands = ['page_white', 'folder_page', 'disk', 'printer', 'page_white_magnify', 'spellcheck',
-  'cut', 'page_copy', 'paste_plain', 'paintbrush', 'arrow_undo', 'arrow_redo', 'world_link', 'table', 'chart_bar']
 const paragraphCommands = ['text_align_left', 'text_align_center', 'text_align_right', 'text_list_numbers', 'text_list_bullets']
 
 function PaperPhoto({ photo, portrait = false }: { photo: DocumentPhoto; portrait?: boolean }) {
@@ -38,8 +36,7 @@ export default function DocumentViewer({ content, onOpen, actions }: { content: 
     <div className="word-menu-row"><Menubar labels={['File', 'Edit', 'View', 'Insert', 'Format', 'Tools', 'Table', 'Window', 'Help']} />{actions}</div>
     <div className="office-bar standard-bar">
       <div className="standard-icons" aria-hidden="true">
-        {reviewAssets ? <img className="word-original" src={`${reviewAssets}/word-standard.png`} alt="" /> :
-          commands.map(name => <Glyph key={name} name={name} />)}
+        <img className="word-original" src={`${xpAssets}/word-standard.png`} alt="" />
       </div>
       <Glyph name="magnifier" /><select aria-label="Document zoom" value={zoom} onChange={event => setZoom(Number(event.target.value))}>
         {[85, 100, 115, 125, 150].map(value => <option key={value} value={value}>{value}%</option>)}

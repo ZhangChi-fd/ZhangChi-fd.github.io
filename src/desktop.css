@@ -12,7 +12,7 @@ button:focus-visible { outline: 2px dotted currentColor; outline-offset: -2px; }
   height: 100vh;
   height: 100dvh;
   isolation: isolate;
-  background: #437dc6 url('/media/meadow.webp') center / cover no-repeat;
+  background: #437dc6 url('/media/xp/bliss.webp') center / cover no-repeat;
 }
 .shortcuts {
   position: absolute;

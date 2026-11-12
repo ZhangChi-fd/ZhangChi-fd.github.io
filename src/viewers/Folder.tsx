@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react'
-import { entries, iconUrl, reviewAssets, type DesktopEntry } from '../registry'
+import { entries, iconUrl, xpAssets, type DesktopEntry } from '../registry'
 import type { FolderContent, FolderItem } from '../content/collections'
 import { Glyph, Menubar } from './chrome'
 import { PhotoViewer, ProjectDetail } from './Detail'
@@ -18,8 +18,7 @@ function describe(item: FolderItem) {
 }
 
 function Arrow({ direction }: { direction: 'back' | 'forward' | 'up' }) {
-  const names = { back: 'arrow_left', forward: 'arrow_right', up: 'arrow_up' }
-  return reviewAssets ? <img src={`${reviewAssets}/nav-${direction}.png`} alt="" /> : <Glyph name={names[direction]} />
+  return <img src={`${xpAssets}/nav-${direction}.png`} alt="" />
 }
 
 export default function FolderViewer({ entry, folder, onOpen }: { entry: DesktopEntry; folder: FolderContent; onOpen: (entry: DesktopEntry) => void }) {

@@ -1,0 +1,9 @@
+XP reference assets used by the site
+
+bliss.webp — user-supplied Bliss reference image; original photograph by Charles O'Rear.
+avatar.png — cropped from the user-supplied XP screenshot.
+about.png, projects.png, photos.png, contact.png, cv.png, start.png — B00merang-Artwork Windows-XP icon theme, pinned revision 24e95ad2b12c55dd11883ee7066525527d944039.
+browser.png, nav-back.png, nav-forward.png, nav-up.png — ShizukuIchi/winXP assets, pinned revision 856bb554b3667f62078010b4cee10cc2645761e1.
+word-standard.png — cropped Word 2003 Standard toolbar reference from the World Class CAD instructional manual.
+
+Sources and licensing context are linked from the repository README.

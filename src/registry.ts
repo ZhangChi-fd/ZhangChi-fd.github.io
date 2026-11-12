@@ -29,11 +29,8 @@ export const entries: readonly DesktopEntry[] = [
   { id: 'player', label: 'Windows Media Player', icon: 'player', description: 'Music and videos', target: { kind: 'player' }, startColumn: 'documents', initialOpen: 'minimized' },
 ]
 
-// The optional review assets live outside public/ and the production module graph.
-export const reviewAssets: string | undefined = import.meta.env.DEV
-  ? import.meta.env.VITE_XP_PREVIEW_ASSETS
-  : undefined
+export const xpAssets = '/media/xp'
 
 export function iconUrl(name: string) {
-  return reviewAssets && name !== 'player' ? `${reviewAssets}/${name}.png` : `/media/${name}.svg`
+  return name === 'player' ? '/media/player.svg' : `${xpAssets}/${name}.png`
 }
