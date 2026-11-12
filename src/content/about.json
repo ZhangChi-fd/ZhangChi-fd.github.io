@@ -1,0 +1,24 @@
+{
+  "title": "Chi Zhang, 张驰 (He/Him)",
+  "portrait": {
+    "src": "/media/about/d9f3e50d729f03e2ff11e9a44c14b39091210d4c013f8c42f7cb199c94d8cd76.jpg",
+    "alt": "Call me Charvin if you like. "
+  },
+  "sections": [
+    {
+      "text": "I am a reader, a thinker, an optimist, and a dedicated pathfinder."
+    },
+    {
+      "heading": "My current focus (Updated in Nov. 2026)",
+      "text": "I study control theory and dynamical systems, with interests in estimation, observability, Kalman filtering, and cooperative robotics. I’m also interested in information-theoretic sensing and optimization, and in AI agents for engineering and formal verification."
+    },
+    {
+      "heading": "My undergraduate life in Beijing",
+      "text": ""
+    },
+    {
+      "heading": "My Master's program in Shenzhen",
+      "text": ""
+    }
+  ]
+}

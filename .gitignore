@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.local-preview/
+.env.development.local
+public/media/about/f509ae0d1903b484e9d85dd89c436ae3db1660b36716660417eee5f09dd31a86.jpg
